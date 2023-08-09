@@ -107,7 +107,7 @@ console.log("isValueNaN(100)", isValueNaN(100)); // Виведе "The value is n
 function createURLObject(urlStr) {
   // Використовуємо вбудований конструктор URL, щоб створити новий об'єкт URL з введеного рядка.
   // Повертаємо створений об'єкт URL.
-  return encodeURI(urlStr);
+  return new URL(urlStr);
 }
 
 // Виконуємо функцію з вхідними даними і виводимо результат.
